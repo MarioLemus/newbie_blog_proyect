@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Header = styled.header`
     background-color: violet;
@@ -34,15 +35,17 @@ function Navbar() {
         <Header>
             <Section>
                 <SectionLogo>
-                    <h2>
-                        Newbie Dev
-                    </h2>
+                    <Link to="/">
+                        <h2>
+                            Newbie Dev
+                        </h2>
+                    </Link>
                 </SectionLogo>
                 <Nav>
                     <Ul>
-                        <Li>New</Li>
-                        <Li>Old</Li>
-                        <Li>New Proyects</Li>
+                        <Link to="/Blogs"><Li>Blogs</Li></Link>
+                        <Link to="/Projects"><Li>Proyects</Li></Link>
+                        <Link to="/Login"><Li>Log in</Li></Link>
                     </Ul>
                 </Nav>
             </Section>

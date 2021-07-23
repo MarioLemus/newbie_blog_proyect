@@ -3,7 +3,7 @@ import Footer from '../../microComponents/Footer';
 import Hero from './home_components/Hero';
 import LastTenBlogs from './home_components/LastTenBlogs';
 import Navbar from '../../microComponents/Navbar'
-import PurposePage from './home_components/PurposePage';
+import PurposePage from '../../microComponents/PurposePage';
 import UserMostLikedBlogs from './home_components/UserMostLikedBlogs';
 
 // const Section = styled.section`
