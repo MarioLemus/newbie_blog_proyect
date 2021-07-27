@@ -2,14 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SectionPurpose = styled.section`
-    background-color: purple;
-    height: 20vh;
+    border: 1px solid grey;
 `
 
-function PurposePage() {
+function PurposePage({title, content}) {
     return (
         <SectionPurpose>
-            <p>objetivo aquí</p>
+            <img src="" alt="" />
+            <h3>{title}</h3>
+            <p>{content}</p>
         </SectionPurpose>
     )
 }

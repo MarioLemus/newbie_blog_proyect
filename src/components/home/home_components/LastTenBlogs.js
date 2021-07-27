@@ -1,25 +1,69 @@
 import React from 'react'
-import BlogPost from '../../blogView/Blog_components/BlogPost'
+import PostCard from '../../../microComponents/PostCard'
 import styled from 'styled-components'
 
 const SectionLastBlogs = styled.section`
     display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-bottom: 40px;
+    width: 100%;
+
+    &::-webkit-scrollbar {
+        display:  none;
+    }
+`
+const SectionPostHolder = styled.section`
+    padding-right: 20px;
 `
 
 function LastTenBlogs() {
+
+    const exampleData = {
+        hasTitle: 'titulo x',
+        hasContentsPreview: 'lorem ipsum dolorum porro primo maximo pope'
+    }
+    //hacer un bucle para asignar la informacion
     return (
         <SectionLastBlogs>
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
+            <SectionPostHolder>
+                <PostCard blogTitle={exampleData.hasTitle} 
+                          contentsPreview={exampleData.hasContentsPreview}/>
+            </SectionPostHolder>
+            <SectionPostHolder>
+                <PostCard blogTitle={exampleData.hasTitle} 
+                          contentsPreview={exampleData.hasContentsPreview}/>
+            </SectionPostHolder>
+            <SectionPostHolder>
+                <PostCard blogTitle={exampleData.hasTitle} 
+                          contentsPreview={exampleData.hasContentsPreview}/>
+            </SectionPostHolder>
+            <SectionPostHolder>
+                <PostCard blogTitle={exampleData.hasTitle} 
+                          contentsPreview={exampleData.hasContentsPreview}/>
+            </SectionPostHolder>
+            <SectionPostHolder>
+                <PostCard blogTitle={exampleData.hasTitle} 
+                          contentsPreview={exampleData.hasContentsPreview}/>
+            </SectionPostHolder>
 
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
+
+            <SectionPostHolder>
+                <PostCard blogTitle={exampleData.hasTitle}
+                          contentsPreview={exampleData.hasContentsPreview}/>
+            </SectionPostHolder>
+            <SectionPostHolder>
+                <PostCard blogTitle={exampleData.hasTitle} 
+                          contentsPreview={exampleData.hasContentsPreview}/>
+            </SectionPostHolder>
+            <SectionPostHolder>
+                <PostCard blogTitle={exampleData.hasTitle} 
+                          contentsPreview={exampleData.hasContentsPreview}/>
+            </SectionPostHolder>
+            <SectionPostHolder>
+                <PostCard blogTitle={exampleData.hasTitle} 
+                          contentsPreview={exampleData.hasContentsPreview}/>
+            </SectionPostHolder>
         </SectionLastBlogs>
     )
 }

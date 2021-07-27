@@ -2,14 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SectionProject = styled.section`
-    background-color: cyan;
+    //background-color: cyan;
+    border: 1px solid grey;
+    
 `;
 
-function Project() {
+function Project({title, description, img}) {
     return (
         <SectionProject>
-            <h2>project</h2>
-            <p>future img</p>
+            <h2>{title}</h2>
+            <p>{description}</p>
+            <img src="" alt="" />
             <button>see more</button>
         </SectionProject>
     )

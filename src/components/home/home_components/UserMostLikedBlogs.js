@@ -1,20 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
-import BlogPost from '../../blogView/Blog_components/BlogPost'
+import PostCard from '../../../microComponents/PostCard'
 
 const SectionLikedBlogs = styled.section`
-    height: 20vh;
     display: flex;
-    width: 80%;
-    margin: 0 auto;
+    flex-wrap: wrap;
 `
 
 function UserMostLikedBlogs() {
+    
+    const exampleData = {
+        hasTitle: 'titulo x',
+        hasContentsPreview: 'lorem ipsum dolorum porro primo maximo pope'
+    }
+    //hacer un bucle para asignar la informacion
     return (
         <SectionLikedBlogs>
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
+            <PostCard blogTitle={exampleData.hasTitle} contentsPreview={exampleData.hasContentsPreview}/>
+            <PostCard blogTitle={exampleData.hasTitle} contentsPreview={exampleData.hasContentsPreview}/>
+            <PostCard blogTitle={exampleData.hasTitle} contentsPreview={exampleData.hasContentsPreview}/>
         </SectionLikedBlogs>
     )
 }

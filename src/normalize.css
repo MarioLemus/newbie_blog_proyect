@@ -2,7 +2,7 @@
 
 /* Document
    ========================================================================== */
-
+   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap');
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -22,6 +22,8 @@ html {
 
 body {
   margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: hsl(1, 20%, 98%);
 }
 
 /**

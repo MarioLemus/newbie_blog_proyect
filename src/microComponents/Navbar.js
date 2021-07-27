@@ -15,17 +15,28 @@ const Section = styled.section`
 `
 const SectionLogo = styled.section`
     display: inline-block;
-    background-color: beige;
+    color: purple;
     height: 3rem;
+`;
+const DivLogoHolder = styled.div`
+    height: 3rem;
+    display: flex;
+    align-items: center;
+`;
+const H2Logo = styled.h2`
+    font-weight: 400;
 `;
 const Nav = styled.nav`
     display: inline-block;
-    background-color: beige;
     height: 3rem;
 `
 const Ul = styled.ul`
     display: flex;
     list-style: none;
+    > a {
+        text-decoration: none;
+        color: hsl(2, 50%, 100%);
+    }
 `
 const Li = styled.li`
     margin: 0 10px;
@@ -34,17 +45,18 @@ function Navbar() {
     return (
         <Header>
             <Section>
-                <SectionLogo>
-                    <Link to="/">
-                        <h2>
-                            Newbie Dev
-                        </h2>
-                    </Link>
-                </SectionLogo>
+                <Link to="/">
+                    <SectionLogo>
+                        <DivLogoHolder>
+                            <H2Logo>Newbie Dev</H2Logo>
+                        </DivLogoHolder>
+                   </SectionLogo>
+                </Link>
+               
                 <Nav>
                     <Ul>
                         <Link to="/Blogs"><Li>Blogs</Li></Link>
-                        <Link to="/Projects"><Li>Proyects</Li></Link>
+                        <Link to="/Projects"><Li>Projects</Li></Link>
                         <Link to="/Login"><Li>Log in</Li></Link>
                     </Ul>
                 </Nav>
