@@ -1,6 +1,7 @@
 import React from 'react'
 import PostCard from '../../../microComponents/PostCard'
 import styled from 'styled-components'
+import SeeMoreScrollBar from '../../../microComponents/SeeMoreScrollBar'
 
 const SectionLastBlogs = styled.section`
     display: flex;
@@ -64,6 +65,7 @@ function LastTenBlogs() {
                 <PostCard blogTitle={exampleData.hasTitle} 
                           contentsPreview={exampleData.hasContentsPreview}/>
             </SectionPostHolder>
+            <SeeMoreScrollBar />
         </SectionLastBlogs>
     )
 }

@@ -10,6 +10,9 @@ import UserMostLikedBlogs from './home_components/UserMostLikedBlogs';
 const Section = styled.section`
     width: 90%;
     margin: 0 auto;
+    > h2 {
+        color: purple;
+    }
 `
 
 function Home() {

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Header = styled.header`
     background-color: violet;
     height: 3rem;
-    position: fixed;
+    //position: fixed;
     width: 100%;
 `; 
 const Section = styled.section`

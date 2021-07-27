@@ -3,10 +3,12 @@ import styled from 'styled-components'
 import BlogStatusBar from './BlogStatusBar';
 
 const Section = styled.section`
-    background-color: purple;
+    background-color: #fff;
     max-width: 20rem;
     min-width: 5rem;
     margin: 0 auto;
+    border-radius: 6px;
+    border: 2px solid violet;
     >h3 {
         text-align: center;
     }
