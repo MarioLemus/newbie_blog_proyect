@@ -2,8 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SectionPurpose = styled.section`
-    border: 1px solid grey;
+    border: 1px solid red;
+    border-radius: 3px;
     line-height: 34px;
+    background-color: #fff;
 `
 
 function PurposePage({title, content, imgPath}) {

@@ -5,12 +5,17 @@ const FooterMain = styled.footer`
     background-color: violet;
     color: purple;
     height: 2rem;
+    display: flex;
+    align-items: center;
+    > p {
+        margin-left: 2rem;
+    }
 `
 
 function Footer() {
     return (
         <FooterMain>
-            foo
+            <p>Copyright disclaimer 2021</p>
         </FooterMain>
     )
 }

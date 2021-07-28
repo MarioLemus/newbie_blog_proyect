@@ -17,7 +17,7 @@ function BlogStatusBar() {
         <Section>
             <p>likes</p>
             <p>fav</p>
-            <p>creation date</p>
+            <p>22 day ago</p>
         </Section>
     )
 }
