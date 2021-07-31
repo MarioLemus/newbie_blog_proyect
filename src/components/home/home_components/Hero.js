@@ -18,6 +18,8 @@ const SectionTitle = styled.section`
     font-size: 25px;
     width: 100%;
     color: purple;
+    -webkit-text-stroke: 2px black;
+    //color: transparent; 
 `
 const Figure = styled.figure`
     background-color: #211522;
@@ -30,32 +32,20 @@ const Figure = styled.figure`
 `
 const ImgJs = styled.img`
     width: 80px;
-    heigth: 80px;
+    height: 80px;
     object-fit: contain;
 `
 const ImgReact = styled.img`
     width: 150px;
-    heigth: 150px;
+    height: 150px;
     object-fit: contain; 
 `
 const ImgPython = styled.img`
     width: 80px;
-    heigth: 80px;
+    height: 80px;
     object-fit: contain; 
 `
-/*css3 Test Syllabus
 
-Fundamentals
-Basic styles
-Basic user interface
-Color styles
-Text and style attribute syntax
-Selectors
-Page media
-Speech and ruby
-2d, 3d and animation
-Font styles
-Miscellaneous */
 function Hero() {
     return (
        <Section>
@@ -66,8 +56,8 @@ function Hero() {
             </SectionHero>
             <Figure>
                 <ImgJs src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="" />
-                <ImgReact src="img/react_logo.png" alt="" />
-                <ImgPython src="img/python_logo.png" alt="" />
+                <ImgReact src="img/logos/react_logo.png" alt="" />
+                <ImgPython src="img/logos/python_logo.png" alt="" />
             </Figure>
        </Section>
     )

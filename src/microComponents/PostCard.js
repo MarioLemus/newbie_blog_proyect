@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import BlogStatusBar from './BlogStatusBar';
+import PostStatusBar from './PostStatusBar';
 
 const Section = styled.section`
     background-color: #fff;
-    max-width: 20rem;
-    min-width: 5rem;
+    width: 17rem;
     margin: 0 auto;
     border-radius: 6px;
     border: 2px solid violet;
@@ -23,7 +22,7 @@ function PostCard({blogTitle, contentsPreview}) {
             <h3>{blogTitle}</h3>
             <p>{contentsPreview}</p>
             {/* likes, fav, date */}
-            <BlogStatusBar />
+            <PostStatusBar />
         </Section>
     )
 }

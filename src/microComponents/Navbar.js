@@ -35,11 +35,11 @@ const Ul = styled.ul`
     list-style: none;
     > a {
         text-decoration: none;
-        color: hsl(2, 50%, 100%);
     }
 `
 const Li = styled.li`
     margin: 0 10px;
+    color: purple;
 `
 function Navbar() {
     return (
@@ -56,7 +56,7 @@ function Navbar() {
                 <Nav>
                     <Ul>
                         <Link to="/Blogs"><Li>Blogs</Li></Link>
-                        <Link to="/Projects"><Li>Projects</Li></Link>
+                        {/* <Link to="/Projects"><Li>Projects</Li></Link> */}
                         <Link to="/Login"><Li>Log in</Li></Link>
                     </Ul>
                 </Nav>
